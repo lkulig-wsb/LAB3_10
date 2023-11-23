@@ -1,17 +1,30 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        //3.10 Napisz program który pobierze liczby z parametrów i wykona na nich operacje
+        //arytmetyczne.
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        //Testowanie dodawania liczb z parametrów
+        //System.out.println(Integer.parseInt(args[0]) + Integer.parseInt(args[1]));
+
+
+
+
+        //Pobranie liczb z argumentów
+        int zmiennaInt1 = Integer.parseInt(args[0]);
+        int zmiennaInt2 = Integer.parseInt(args[1]);
+        int zmiennaInt3 = Integer.parseInt(args[2]);
+
+        //Wykonanie operacji arytmetycznych
+        int wynikDodawania1 = zmiennaInt1 + zmiennaInt2 + zmiennaInt3;
+        int wynikMnozenia1 = zmiennaInt2 * zmiennaInt3;
+        int dzilanieNawiasy = (zmiennaInt1 + zmiennaInt3) * zmiennaInt2;
+
+        //Wyświetlenie wyniku operacji arymetycznych
+        System.out.print(zmiennaInt1 + " + " + zmiennaInt2 + " + " + zmiennaInt3 + " = " + wynikDodawania1);
+        System.out.print("\n"+zmiennaInt2 + " * " + zmiennaInt3 + " = "  + wynikMnozenia1);
+        System.out.print("\n("+zmiennaInt1 + " + " + zmiennaInt3 + ") "  + " * " + zmiennaInt2 + " = " + dzilanieNawiasy);
+
     }
 }
