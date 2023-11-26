@@ -15,7 +15,9 @@ public class Main {
             return;
         }
 
-        //Pobranie liczb z argumentów
+        //Pobranie liczb z argumentów.
+        //Metoda parseInt przekształca argument programu (args[0]), który znajduje się na pierwszej pozycji (index 0), na
+        //liczbę całkowitą, a następnie przypisuje ją do zmiennej o nazwie zmiennaInt1, która jest typu int.
         int zmiennaInt1 = Integer.parseInt(args[0]);
         int zmiennaInt2 = Integer.parseInt(args[1]);
         int zmiennaInt3 = Integer.parseInt(args[2]);
